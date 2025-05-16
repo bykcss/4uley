@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>4u, ley</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scroll-bar" id="scroll-bar"></div>
+
+  <div class="container" id="input-screen">
+    <h1>Y tú, ¿a quién extrañas?</h1>
+    <input type="text" id="nameInput" placeholder="Pon su nombre aquí" onfocus="this.placeholder=''" />
+    <button onclick="siguiente()">Siguiente</button>
+    <p id="error" class="error-msg"></p>
+  </div>
+
+  <div class="container hidden" id="output-screen">
+    <div id="captureArea">
+      <h2 id="outputText"></h2>
+      <p id="loveCount"></p>
+      <p id="marcaFinal" style="display:none;">#4uley, un proyecto de Kcs</p>
+    </div>
+    <p id="fraseTexto" class="frase-visible"></p>
+    <button onclick="descargarImagen()">Descargar para compartir</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="frases_aleatorias.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
