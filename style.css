@@ -1,0 +1,138 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100vh;
+}
+.container {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  padding: 14px;
+  font-size: 22px;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+  margin-top: 20px;
+  width: 300px;
+  text-align: center;
+  text-transform: uppercase;
+}
+button {
+  padding: 14px 30px;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+}
+button:hover {
+  background-color: #ddd;
+}
+.hidden { display: none; }
+.scroll-bar {
+  width: 100%;
+  background-color: #000;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 1000;
+  border-bottom: 1px solid #333;
+}
+.scroll-bar span {
+  display: inline-block;
+  padding-right: 60px;
+  animation: scroll-left 40s linear infinite;
+}
+@keyframes scroll-left {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+h1, h2, p {
+  text-transform: uppercase;
+  margin: 15px 0;
+  letter-spacing: 1px;
+}
+h2 { font-size: 42px; }
+p { font-size: 20px; }
+.error-msg {
+  color: #ff4d4d;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.frase-visible {
+  margin-top: 20px;
+  font-size: 16px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: none;
+}
+.imagen-visible {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.imagen-captura {
+  width: 1080px;
+  height: 1920px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 100px 60px;
+  box-sizing: border-box;
+}
+.imagen-captura h2 {
+  font-size: 72px;
+  margin-bottom: 30px;
+}
+.imagen-captura p {
+  font-size: 36px;
+  margin: 20px 0;
+}
+.marca {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 24px;
+  opacity: 0.9;
+}
+.boton-descarga {
+  margin-top: 60px;
+}
+.contenido-ajustado {
+  max-width: 90vw;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.invisible {
+  position: absolute;
+  left: -9999px;
+  visibility: hidden;
+  pointer-events: none;
+}
